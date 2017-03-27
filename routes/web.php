@@ -11,14 +11,16 @@
 |
 */
 
-Route::get('/', function () {
+Use App\Product;
 
+Route::get('/', 'HomeController@index');
+
+Route::get('/cart', function () {
     //Primera forma: llamar directamente desde la base de datos
     //$products = DB::table('product')->get();
 
     //Segunda forma: llamar desde el model Eloquent
-    $products = App\Product::all();
+    $products = Product::all();
 
     return view('welcome', compact('products'));
-
 });

@@ -7,7 +7,7 @@
 <body>
     <h1>
     @foreach($products as $producto)
-        <li> {{$producto->title}}</li>
+        <li> {{$producto->price}}</li>
     @endforeach
     </h1>
 </body>
