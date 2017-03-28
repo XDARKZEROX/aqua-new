@@ -17,7 +17,7 @@
 
                 </button>
                 <div class="nav-collapse">
-
+                    @include('layouts.navbar')
                 </div>
 
                 <ul class="nav pull-center">
