@@ -31,11 +31,9 @@
         </div>
     </div>
 </header>
-<div class="container">
 
-    <!--CONTAINER YIELD@-->
+@yield('content')
 
-</div>
 @include('layouts.footer')
 </body>
 </html>
