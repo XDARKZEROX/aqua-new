@@ -31,6 +31,7 @@ Route::get('/productos-online', function () {
 
 Route::get('/beneficios', 'HomeController@beneficios')->name('beneficios');
 
+
 //Route::get('/beneficios', '')->name('beneficios');
 
 
