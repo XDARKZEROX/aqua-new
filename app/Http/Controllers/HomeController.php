@@ -14,4 +14,12 @@ class HomeController extends Controller
         return view('presentacion');
     }
 
+    public function beneficios(){
+        return view('beneficios');
+    }
+
+    public function estudios_cientificos(){
+        return view('estudios-cientificos');
+    }
+
 }

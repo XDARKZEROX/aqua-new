@@ -17,15 +17,20 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/presentacion', 'HomeController@presentacion')->name('presentacion');
 
+Route::get('/estudios-cientificos', 'HomeController@estudios_cientificos')->name('estudios-cientificos');
+
 Route::get('/productos-online', function () {
 
-    echo 'test';
     //Primera forma: llamar directamente desde la base de datos
-    //$products = DB::table('product')->get();
+    $products = DB::table('product')->get();
 
     //Segunda forma: llamar desde el model Eloquent
-    $products = Product::all();
-
-//    return view('welcome', compact('products'));
+    // $products = Product::all();
+    return view('productos-online', compact('products'));
 })->name('productos-online');
+
+Route::get('/beneficios', 'HomeController@beneficios')->name('beneficios');
+
+//Route::get('/beneficios', '')->name('beneficios');
+
 
