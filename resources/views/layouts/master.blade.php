@@ -16,12 +16,12 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-                    <a class="brand clearfix pc" style="margin: 0 39px 0 0; float: none;" href="index">
-                        <br><img src="images/logo.png" />
+                    <a class="brand clearfix pc" style="margin: 0 39px 0 0; float: none;" href="{{route('/')}}">
+                        <br><img src="images/logo.png"/>
                     </a>
                     <br>
-                    <a class="brand clearfix movil" style="margin: 0 39px 0 0; float: none;" href="index">
-                        <br><img src="images/logo2.png" /><br>
+                    <a class="brand clearfix movil" style="margin: 0 39px 0 0; float: none;" href="{{route('/')}}">
+                        <br><img src="images/logo2.png"/><br>
                     </a>
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
                         @include('layouts.navbar')
@@ -31,9 +31,7 @@
         </div>
     </div>
 </header>
-
 @yield('content')
-
 @include('layouts.footer')
 </body>
 </html>
