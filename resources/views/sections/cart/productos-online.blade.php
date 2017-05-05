@@ -1,7 +1,6 @@
 @extends('layouts.master')
 @section('content')
     <div class="container">
-
         <div class="clearfix brand">
             <h1 class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                 Adquiere nuestros productos
@@ -16,6 +15,9 @@
     <div class="container main">
         <h2>PRODUCTOS</h2>
         <div id="modal-contenedor">
+            <div id="test">
+
+            </div>
             <!--EMPTY -->
         </div>
 
@@ -43,7 +45,10 @@
                                 <input min="1" max="50" name="" id="" type="number" class="col-xs-3 col-sm-4 col-md-4 col-lg-2" value="1">
                             </div>
                             <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 agregar">
-                                <button data-button="" class="col-xs-12 col-sm-8 col-md-5 col-lg-5 btn-add-product">Agregar</button>
+
+                                <button data-button="" @click.prevent="addProduct()" class="col-xs-12 col-sm-8 col-md-5 col-lg-5 btn-add-product">
+                                    <span class="glyphicon glyphicon-plus"></span> AGREGAR
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -60,14 +65,4 @@
         @endforeach
 
 </div>
-
-
-
-
-
-
-
-
-
-
 @stop

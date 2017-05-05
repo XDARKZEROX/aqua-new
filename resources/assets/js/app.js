@@ -13,8 +13,21 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
-
 const app = new Vue({
-    el: '#app'
+    el: '#test',
+    data: {
+        items: [],
+        hasError: true,
+        hasDeleted: true,
+        newItem : {'name':''}
+    },
+    mounted : function(){
+        console.log('mounted');
+    },
+    methods : {
+        addProduct: function() {
+            console.log('addProduct');
+        }
+
+    }
 });

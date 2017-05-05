@@ -1,8 +1,4 @@
 <footer class="footer">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/home.js"></script>
-
     <div class="navbar">
         <div class="navbar-inner">
 
@@ -51,6 +47,9 @@
             </div>
 
         </div>
-
     </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
 </footer>
