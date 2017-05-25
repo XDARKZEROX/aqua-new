@@ -123,4 +123,4 @@
         </section>
     </div>
 </div>
-@stop
+@endsection

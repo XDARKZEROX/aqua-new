@@ -47,4 +47,4 @@
         <a class="col-xs-12 col-sm-3 col-md-3 col-lg-2 btn_estudios" href="pdf/anticancer-effect-of-alkaline-reduced-water.pdf" target="_blank">Más información</a>
     </section>
 </div>
-@stop
+@endsection

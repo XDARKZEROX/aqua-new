@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('content')
+
     <div class="container">
         <div class="clearfix brand">
             <h1 class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
@@ -63,6 +64,8 @@
                 </div>
             </section>
         @endforeach
-
 </div>
-@stop
+@endsection
+@section('vuejs.footer')
+    <script type="text/javascript" src="/js/app.js"></script>
+@endsection

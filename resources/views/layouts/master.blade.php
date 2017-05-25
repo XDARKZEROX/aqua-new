@@ -32,7 +32,10 @@
     </div>
 </header>
 @yield('content')
+<footer class="footer">
 @include('layouts.footer')
+@yield('vuejs.footer')
+</footer>
 </body>
 </html>
 
