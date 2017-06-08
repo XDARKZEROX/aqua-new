@@ -33,4 +33,10 @@ Route::get('/beneficios', 'HomeController@beneficios')->name('beneficios');
 
 Route::get('/productos-online', 'CartController@index')->name('productos-online');
 
+//Route::get('/product/{code}', 'CartController@getProductFromCode')->name('product');
 
+Route::post('/addProductToCart', 'CartController@addProductToCart');
+
+Route::post ('/addProductToCart/{rowId}', 'CartController@deleteProduct' );
+
+Route::get('/listCart', 'CartController@getCart');

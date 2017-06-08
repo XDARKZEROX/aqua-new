@@ -13,23 +13,39 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-
-
 const app = new Vue({
-    el: '#test',
+    el: '#container-main',
     data: {
         items: [],
         hasError: true,
-        hasDeleted: true,
-        newItem : {'name':''}
+        hasDeleted: true
     },
-    mounted : function(){
-        console.log('mounted');
+    mounted : function() {
+        this.getCart();
     },
     methods : {
-        addProduct: function() {
-            console.log('addProduct');
-        }
+        getCart: function () {
+            axios.get('/listCart').then(response => {
+                this.items = response.data;
+                console.log(this.items);
+            })
+        },
+        addProduct: function(codigo) {
+            var self = this;
+            axios.post('/addProductToCart', {
+                code: codigo,
+                quantity: $('#quantity-'+codigo).val()
+            }).then(function (response) {
+                self.getCart();
+            }).catch(function (error) {
+                console.log(error);
+            });
+        },
+        deleteItem: function(item) {
+            axios.post('/addProductToCart/'+item.rowId).then((response) => {
+                this.getCart();
+            });
 
+        }
     }
 });
