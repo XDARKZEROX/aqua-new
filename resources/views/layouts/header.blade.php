@@ -6,9 +6,9 @@
 <meta name="BOTS" content="ALL">
 <title>Aqua PH9</title>
 <link rel="shortcut icon" href="resource/images/favicon.html">
-<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="css/main.css" type="text/css">
-<link rel="stylesheet" href="css/callback.css" type="text/css">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 

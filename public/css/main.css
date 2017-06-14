@@ -278,12 +278,12 @@ footer .navbar .pull-center a:hover{
 .right{
     text-align: right;
 }
-header .brand h1{
+div .brand h1{
     font-family: 'arvo regular';
     font-size: 50px;
     line-height: 70px;
 }
-header .brand img{
+div .brand img{
     display: block;
     margin: 0 auto;
     float: none;
@@ -292,7 +292,7 @@ header .brand img{
 header .brand-beneficios img{
     mix-blend-mode: multiply;
 }
-header .brand h1 strong{
+div .brand h1 strong{
     font-family: 'arvo boldItalic';
 }
 .no_padding_left{
@@ -1102,7 +1102,7 @@ p.texto_producto{
     padding: 0;
 }
 
-.producto_detalle tr td, {
+.producto_detalle tr td{
     border-bottom: 1px solid #ddd;
 }
 
